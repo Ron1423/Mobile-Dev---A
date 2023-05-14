@@ -1,7 +1,7 @@
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { Home, SignIn, SignUp, Splash, Intro, OrderSummary, Menus, AboutUs } from '../src/screens';
+import { Home, SignIn, SignUp, Splash, Intro, OrderSummary, Menus, AboutUs,OrderSuccess } from '../src/screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,7 +39,7 @@ const Router = () => {
             component={AboutUs}
             options={{headerShown : false}}
             />
-            <Stack.Screen 
+            <Stack.Screen
             name="SignIn" 
             component={SignIn}
             options={{headerShown : false}}
