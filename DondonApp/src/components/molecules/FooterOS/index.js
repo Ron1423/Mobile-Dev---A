@@ -28,7 +28,8 @@ styles = StyleSheet.create({
     textView : {
         right : 150,
         fontFamily : 'Poppins',
-        fontSize : 'normal',
+        fontWeight : 'bold',
+        fontSize : 20,
         fontWeight : 800,
         fontSize : 17,
         color : '#222222',
@@ -38,7 +39,8 @@ styles = StyleSheet.create({
     Text : {
         right : -130,
         fontFamily : 'Poppins',
-        fontSize : 'normal',
+        fontWeight : 'bold',
+        fontSize : 20,
         fontWeight : 800,
         fontSize : 17,
         color : '#222222',

@@ -1,9 +1,9 @@
-import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import { Image, StyleSheet, Text, View, TouchableOpacity, Touchable } from 'react-native'
 import React from 'react'
 import { icProfile,back,logo2 } from '../../../assets';
 import { Gap } from '../../atoms';
 
-const Header = ({ isHeader,isProfile,isAbout,onBack,toSignIn,title,name,IcProf={icProfile}}) => {
+const Header = ({ isHeader,isProfile,onBack,toSignIn,title,name,IcProf={icProfile}}) => {
   return (
     <View style = {styles.mrgn}>
       {onBack && (    
@@ -34,14 +34,6 @@ const Header = ({ isHeader,isProfile,isAbout,onBack,toSignIn,title,name,IcProf={
           </View>
         )}
       </View>
-      <Gap width={60}/>
-      {isAbout &&(
-        <View>
-          <TouchableOpacity onPress={toSignIn}>
-              <Image style = {styles.image1} source={IcProf}/>
-          </TouchableOpacity>
-        </View>
-      )}
     </View>
   )
 }
@@ -105,12 +97,6 @@ const styles = StyleSheet.create({
     },
 
     image2 : {
-      width : 60,
-      height : 60,
-      borderRadius : 60,
-    },
-
-    image1 : {
       width : 60,
       height : 60,
       borderRadius : 60,

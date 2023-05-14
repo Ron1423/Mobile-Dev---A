@@ -12,9 +12,10 @@ const OrderSummary = ({navigation}) => {
          <Header isHeader={true} IcProf={profile} onBack={() => navigation.goBack()} toSignIn={()=>navigation.navigate('SignIn')}/>
         <View style = {styles.ATView}>
             <Text style ={styles.order}>Order</Text> 
-            <Text style ={styles.odrsum}>Order Summary</Text>  
+            <Text style ={styles.odrsum}>Order Summary </Text>  
             <Gap height={25}/>
-            <ButtonOS text={'Delivery'} onPress={()=>navigation.navigate('',{title : 'Makanan',})}/>
+            <ButtonOS text={'Delivery'} />
+            {/* onPress={()=>navigation.navigate('',{title :''})} */}
             <TouchableOpacity  style={[styles.appContainer,styles.shadowProp]} activeOpacity={0.70}>
               <Text style={styles.appText}>1x</Text>
               <Text style={styles.appText2}>Ayam Geprek</Text>
@@ -102,8 +103,7 @@ const styles = StyleSheet.create({
       fontWeight : 600,
       fontSize : 17,
       lineHeight : 23,
-      right : 50
-      ,
+      right : 50,
       top : -35
   },
 
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     lineHeight : 23,
     left: 120,
     top : -58
-},
+}
    
 })
 
