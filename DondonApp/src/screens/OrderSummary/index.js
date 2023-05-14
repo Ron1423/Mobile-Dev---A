@@ -16,12 +16,11 @@ const OrderSummary = ({navigation}) => {
             <Gap height={25}/>
             <ButtonOS text={'Delivery'} />
             {/* onPress={()=>navigation.navigate('',{title :''})} */}
-            <TouchableOpacity  style={[styles.appContainer,styles.shadowProp]} activeOpacity={0.70}>
+            <View style={[styles.appContainer,styles.shadowProp]} activeOpacity={0.70}>
               <Text style={styles.appText}>1x</Text>
               <Text style={styles.appText2}>Ayam Geprek</Text>
-              <Text style={styles.appText3}>Rp 20.000</Text>
-              
-            </TouchableOpacity>
+              <Text style={styles.appText3}>Rp 20.000</Text> 
+            </View>
         </View>
         
         <FooterOS onPress={()=>navigation.navigate('OrderSuccess')}/>
@@ -64,9 +63,9 @@ const styles = StyleSheet.create({
     },
 
     appContainer: {
-      elevation: 5,
-      backgroundColor:'FFFFFF' ,
-      borderRadius: 8,
+      elevation: 3.5,
+      backgroundColor:'white' ,
+      borderRadius: 10,
       paddingVertical: 50,
       width : 350,
       bottom : 120,
