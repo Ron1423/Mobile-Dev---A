@@ -20,9 +20,13 @@ const Menus = ({ route,navigation }) => {
                         <Item1 name={'Ayam Rempah'} image={Fries} price={'15.000'}/>
                         <Item1 name={'Ayam Rempah'} image={Fries} price={'15.000'}/>
                     </View>
-                    <View style = {styles.containerItem2}>
-                    <Item2 name={'Ayam Rempah'} image={Fries} price={'15.000'}/>
-                    <Item2 name={'Ayam Rempah'} image={Fries} price={'15.000'}/>
+                    <View style = {styles.containerItem1}>
+                        <Item1 name={'Ayam Rempah'} image={Fries} price={'15.000'}/>
+                        <Item1 name={'Ayam Rempah'} image={Fries} price={'15.000'}/>
+                    </View>
+                    <View style = {styles.containerItem1}>
+                        <Item1 name={'Ayam Rempah'} image={Fries} price={'15.000'}/>
+                        <Item1 name={'Ayam Rempah'} image={Fries} price={'15.000'}/>
                     </View>
                 </View>
             </ScrollView>

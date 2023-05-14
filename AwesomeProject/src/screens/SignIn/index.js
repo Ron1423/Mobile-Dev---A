@@ -5,8 +5,6 @@ import { View,
     StyleSheet } from 'react-native' //core component
 import ButtonAT from '../../components/atoms/Button';
 import TextInputAT from '../../components/molecules/TextInputAT';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const SignIn = props => {
     const oPress = () => {

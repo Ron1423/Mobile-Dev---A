@@ -6,7 +6,6 @@ import { View,
     ImageBackground,
     ScrollView,
     StyleSheet } from 'react-native' //core component
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 import Gambar from '../img/bg.jpg'
 import Bg from '../img/bgu.jpg'
 

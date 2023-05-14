@@ -40,6 +40,11 @@ const Router = () => {
             options={{headerShown : false}}
             />
             <Stack.Screen
+              name="OrderSuccess"
+              component={OrderSuccess}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen 
             name="SignIn" 
             component={SignIn}
             options={{headerShown : false}}

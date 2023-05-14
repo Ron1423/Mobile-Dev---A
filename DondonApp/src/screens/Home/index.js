@@ -16,7 +16,7 @@ const Home = ({navigation}) => {
             </View>
             <View style = {styles.btnView}>
                 <HomeButton text={'Metode Pembayaran'} isItem={true} pict={icPay} onPress={()=>navigation.navigate('OrderSummary')}/>
-                <HomeButton text={'Riwayat Pembelian'} isItem={true} pict={icHistory}/>
+                <HomeButton text={'Riwayat Pembelian'} isItem={true} pict={icHistory} onPress={()=>navigation.navigate('OrderSuccess')}/>
                 <HomeButton text={'Tentang Kami'} isItem={true} pict={icInfo} onPress={()=>navigation.navigate('AboutUs')}/>
             </View>
             <View style = {styles.smView}>
